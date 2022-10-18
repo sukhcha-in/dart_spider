@@ -1,6 +1,6 @@
 name: dart_spider
 description: Dart Spider is a simple package to extract information from URLs.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/sukhcha-in/dart_spider
 
 environment:
