@@ -1,10 +1,6 @@
-import 'dart:convert';
-import 'dart:io';
 import 'package:dart_spider/dart_spider.dart';
-import 'package:dart_spider/src/models/config_model.dart';
-import 'package:dart_spider/src/models/optional_model.dart';
-import 'package:dart_spider/src/models/parser_model.dart';
-import 'package:dart_spider/src/models/target_model.dart';
+import 'dart:convert';
+import 'dart:io'; //Just for input from console
 
 void main() async {
   //Config
