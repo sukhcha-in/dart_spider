@@ -9,3 +9,7 @@
 ## 0.0.3
 
 - Fix exports of models
+
+## 0.0.4
+
+- Updated Readme file
