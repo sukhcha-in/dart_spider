@@ -13,3 +13,7 @@
 ## 0.0.4
 
 - Updated Readme file
+
+## 0.0.5
+
+- Updated code documentation

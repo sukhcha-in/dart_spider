@@ -1,38 +1,91 @@
 import 'package:dart_spider/src/models/enums.dart';
 
 class AbstractOptional {
-  ApplyMethod? apply; //Apply different functions to result
-  String? regex; //Pattern
-  int? regexGroup; //Match to group
-  String? regexReplace; //Pattern
-  String? regexReplaceWith; //Replace with selected pattern
-  Map<String, String>? replace; //String to find for replacing
-  int? cropStart; //Crop result from start
-  int? cropEnd; //Crop result from end
-  String? prepend; //Prepend string to result
-  String? append; //Append string to result
-  List<dynamic>? match; //Checks if result has match in predefined list
-  int? nth; //Select nth result from list
+  /// Apply different functions to result.
+  ApplyMethod? apply;
 
-  //Http
+  /// Regex pattern.
+  String? regex;
+
+  /// Match to group.
+  int? regexGroup;
+
+  /// Regex Replace pattern.
+  String? regexReplace;
+
+  /// Replace with selected pattern.
+  String? regexReplaceWith;
+
+  /// Map to find keys and replace them with values.
+  Map<String, String>? replace;
+
+  /// Crop result from start.
+  int? cropStart;
+
+  /// Crop result from end.
+  int? cropEnd;
+
+  /// Prepend string to result.
+  String? prepend;
+
+  /// Append string to result.
+  String? append;
+
+  /// Checks if result has match in predefined list.
+  List<dynamic>? match;
+
+  /// Select nth result from list.
+  int? nth;
+
+  ///
+  /// Based on ParserType.
+  ///
+
+  ///* [ParserType.http].
+  /// Target URL.
+  /// URLs can have [@slot] where parent value will be inserted.
   String? url;
+
+  /// HttpMethod as GET/POST.
   HttpMethod? method;
+
+  /// Add Custom Headers.
   Map<String, dynamic>? headers;
+
+  /// Custom User Agent.
   UserAgentDevice? userAgent;
+
+  /// responseType defines what to do once we grab data from URL.
+  /// if [HttpResponseType.html] then result will be converted to element.
+  /// if [HttpResponseType.json] then result will be decoded from JSON.
   HttpResponseType? responseType;
+
+  /// For POST requests you can add custom payLoad.
   dynamic payLoad;
+
+  /// payLoad can be String or JSON.
   HttpPayload? payloadType;
 
-  //String between
+  ///* [ParserType.strBetween].
+  /// Start of a string.
   String? start;
+
+  /// End of a string.
   String? end;
 
-  //Sibling
+  ///* [ParserType.sibling].
+  /// If where is passed, value of selector is matched, result is sibling of an element where match was found.
   List<String>? where;
 
-  //Table
+  ///* [ParserType.json].
+  /// JSON Table keys path.
   String? keys;
+
+  /// JSON Table values path.
   String? values;
+
+  /// JSON Table whitelist values.
+  /// Stll Pending.
   List<String>? whitelist;
 
   AbstractOptional({

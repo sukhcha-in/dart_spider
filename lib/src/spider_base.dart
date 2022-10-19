@@ -23,7 +23,9 @@ import 'parsers/none_parser.dart';
 import 'parsers/staticvalue_parser.dart';
 
 class Spider {
-  //Main function entry point
+  /// Entry point for scraper.
+  /// Requires, Map of [Config] and a [url].
+  /// You can pass [html] if it's available, so scraper can skip fetching HTML and start parsing directly.
   static Future scrapeFromUrl(
     Map<String, Config> masterConfig,
     String? url, {

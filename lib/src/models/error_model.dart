@@ -1,5 +1,9 @@
+/// Spider Error Model.
 class SpiderError {
+  /// Error Code.
   int? code;
+
+  /// Error Message.
   String? error;
 
   SpiderError(
