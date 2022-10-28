@@ -25,7 +25,8 @@ import 'parsers/staticvalue_parser.dart';
 class Spider {
   /// Entry point for scraper.
   /// Requires, Map of [Config] and a [url].
-  /// You can pass [html] if it's available, so scraper can skip fetching HTML and start parsing directly.
+  /// You can pass pre-fetched [html] if it's available, so scraper can skip fetching HTML and start parsing directly.
+  /// [extract] and [priceConfig] was meant to be used for e-commerce price fetching when only price was needed. You can ignore it.
   static Future scrapeFromUrl(
     Map<String, Config> masterConfig,
     String? url, {
