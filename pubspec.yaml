@@ -1,6 +1,6 @@
 name: dart_spider
 description: Simple way to scrape and extract data from websites in a structured way.
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/sukhcha-in/dart_spider
 
 environment:

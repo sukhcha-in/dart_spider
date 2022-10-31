@@ -21,3 +21,7 @@
 ## 0.0.6
 
 - Updated code documentation
+
+## 0.0.7
+
+- Add Wildcard selector (~) for JSON Parser 

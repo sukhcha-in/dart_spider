@@ -35,7 +35,7 @@ Dart Spider is a simple package to scrape HTML from URL and parse it using built
 Add `dart_spider` to your pubspec.yaml file:
 ```yaml
 dependencies:
-    dart_spider: ^0.0.6
+    dart_spider: ^0.0.7
 ```
 And import using:
 ```dart

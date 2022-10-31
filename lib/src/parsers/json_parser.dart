@@ -109,6 +109,10 @@ dynamic jsonHandler(parser, json, path, listSelector) {
           if (split[0] == 'String') {
             json = json[split[1].toString()];
           }
+        } else if (i.startsWith("~")) {
+          json = json[json.keys.firstWhere(
+            (k) => k.toString().contains(i.substring(1)),
+          )];
         } else {
           json = json[i];
         }
