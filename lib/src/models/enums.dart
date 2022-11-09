@@ -27,3 +27,5 @@ enum ParserType {
 enum HttpMethod { get, post }
 
 enum HttpPayload { string, json }
+
+enum SiblingDirection { previous, next }

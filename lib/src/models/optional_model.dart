@@ -77,6 +77,9 @@ class AbstractOptional {
   /// If where is passed, value of selector is matched, result is sibling of an element where match was found.
   List<String>? where;
 
+  /// Sibling direction [previous] or [next]
+  SiblingDirection? siblingDirection;
+
   ///* [ParserType.json].
   /// JSON Table keys path.
   String? keys;
@@ -111,6 +114,7 @@ class AbstractOptional {
     this.start,
     this.end,
     this.where,
+    this.siblingDirection,
     this.keys,
     this.values,
     this.whitelist,
@@ -172,7 +176,8 @@ class StrBtwOptional extends AbstractOptional {
 }
 
 class SiblingOptional extends AbstractOptional {
-  SiblingOptional({List<String>? where}) : super(where: where);
+  SiblingOptional({required SiblingDirection direction, List<String>? where})
+      : super(siblingDirection: direction, where: where);
 }
 
 class TableOptional extends AbstractOptional {

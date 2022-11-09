@@ -25,3 +25,9 @@
 ## 0.0.7
 
 - Add Wildcard selector (~) for JSON Parser 
+
+## 0.0.8
+
+- Update example.dart
+- Updates to SiblingParser: SiblingOptional now requires siblingDirection which can be previous or next. Defaults to next.
+- Fix URL Parser prepending
