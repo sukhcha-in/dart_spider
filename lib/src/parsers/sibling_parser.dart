@@ -1,6 +1,5 @@
 import 'package:dart_spider/dart_spider.dart';
 import 'package:html/parser.dart';
-import '../models/parser_model.dart';
 
 dynamic siblingParser(Parser parser, dynamic dom) {
   dynamic source;
